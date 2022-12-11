@@ -1,0 +1,92 @@
+:root {
+  --primary: #ff52bf;
+  --bg-section: #ebfbff;
+  --dark: #00252e;
+  --text: #808d99;
+}
+.c-primary {
+  color: var(--primary) !important;
+}
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+.c-dark {
+  color: var(--dark) !important;
+}
+.bg-dark {
+  background-color: var(--dark) !important;
+}
+.c-text {
+  color: var(--text) !important;
+}
+.ff-head {
+  font-family: "Poppins", sans-serif;
+}
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  text-rendering: optimizeSpeed;
+  font-size: 18px;
+}
+main {
+  background: url("../imgs/bg-hero-desktop.svg") center center no-repeat;
+  background-size: cover;
+  background-color: var(--bg-section);
+}
+/* Start Nav */
+a.btn {
+  transition: 0.3s;
+  font-size: 14px;
+}
+a.btn:hover {
+  background-color: var(--dark) !important;
+  color: #fff;
+}
+/* End Nav */
+main + section {
+  margin-top: 8rem;
+}
+section:not(.landing) .container {
+  box-shadow: 0 0 20px rgba(0 0 0 / 0.1) !important;
+}
+.community {
+  transform: translateY(40%);
+}
+.community .width {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 20px rgba(0 0 0 / 0.1) !important;
+}
+/* Start Footer */
+footer ul li a:hover {
+  transform: translateX(10px);
+  color: var(--bg-section);
+}
+footer ul li a,
+footer .social a {
+  transition: 0.3s;
+}
+footer .social a:hover {
+  color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+/* End Footer */
